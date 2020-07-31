@@ -72,7 +72,7 @@
 | understand the IACA philosophy :            |
 |                                             |
 | - Your code can be separated in 4 BIG       |
-|   BLOCKS separated by 6 carriage returns :  |
+|   BLOCKS separated by 6 line feeds :        |
 |   // ------------ importations ------------ |
 |   // ------------ declarations ------------ |
 |   // ------------ functions ------------    |
