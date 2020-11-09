@@ -29,14 +29,16 @@
 |    Headers are accepted for standard        |
 |    libraries only.                          |
 |                                             |
-| 3) The program is either an runable file    |
+| 3) The program is either a runable file     |
 |    (with a main() function) or a utility    |
 |    file (without any main() function).      |
 |                                             |
 | 4) If a functionnality in a runable file    |
-|    should to be shared with another one,    |
+|    seems to be shared with another one,     |
 |    the functionnality has to be placed in   |
 |    an utility file to make it shareable.    |
+|    (So that both runable files can include  |
+|    this utility).                           |
 |                                             |
 | 5) The code has to be CLEAR and CLEAN,      |
 |    easy to understand for everybody.        |
@@ -53,15 +55,16 @@
 |    "referencing" code.                      |
 |    "referencing" code is code that ONLY     |
 |    consists in associating values to other  |
-|    values (basically System/utilities.c :   |
+|    values.                                  |
+|    (Basically System/utilities.c :          |
 |    charToInt() function).                   |
 |                                             |
-| 7) IACA recognizes 2 type of errors :       |
+| 7) IACA recognizes 2 types of error :       |
 |    RUNTIME ERROR : execution continues      |
 |    FATAL ERROR   : execution stops          |
 |    When an error occurs, the program must   |
 |    print to screen a sequence like this :   |
-|    "ERROR_TYPE > file.c : func() : details" |
+|    "ERROR TYPE > file.c : func() : details" |
 |    RUNTIME ERRORS can be disabled by :      |
 |    #define RUNTIME_ERROR_DISABLE.           |
 |                                             |
@@ -85,7 +88,7 @@
 |   //...                                     |
 |                                             |
 | - Each function can have a SHORT(I insist)  |
-|   description of what it is doing situated  |
+|   description of what it is doing, situated |
 |   near the function name.                   |
 |                                             |
 | - The clearer is your code, the better it   |
